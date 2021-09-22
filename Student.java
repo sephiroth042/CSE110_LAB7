@@ -17,6 +17,10 @@ public class Student {
         this.asuId = asuId;
         this.grade = -1.00;
     }
+    public String toString() {
+        return String.format("Student: %s, ASUID: %s, Grade: %s",
+                fullName, asuId, Double.toString(grade));
+    }
 
     public void setGrade(double newGrade){
         this.grade = newGrade;
